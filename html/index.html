@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/style.css">
+      <title>Movie App</title>
+  </head>
+
+  <body>
+
+      <!-- Navigation Bar -->
+      <header>
+          <div class="navbar">
+              <div class="navbar-container">
+                  <ul class="menu-list">
+                      <li class="menu-list-item active"><a href="#">Home</a></li>
+                      <li class="menu-list-item"><a href="#">Movies</a></li>
+                      <li class="menu-list-item"><a href="#">Drama</a></li>
+                      <li class="menu-list-item"><a href="#">Anime</a></li>
+                  </ul>
+
+                  <!-- Search Bar -->
+                  <form id="form">
+                      <input type="text" placeholder="Search" id="search" class="search">
+                  </form>
+              </div>
+          </div>
+      </header>
+
+      <!-- Featured Section -->
+      <div class="featured" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('../img/myname.jpg');">
+          <h1>My Name</h1>
+          <p class="featured-desc">
+              Following her father's murder, a revenge-driven woman puts her trust in a powerful crime boss 
+              — and enters the police force under his direction.
+          </p>
+          <button class="featured-button"> WATCH NOW </button>
+      </div>
+
+      <!-- Movie List -->
+      <div class="container">
+          <h3 class="movie-list-title">Trending Now</h3>
+
+              <!-- Overlay -->
+              <div id="myNav" class="overlay">
+
+                  <!-- Button to close the overlay navigation -->
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                  <!-- Overlay content -->
+                  <div class="overlay-content" id="overlay-content"></div>
+
+              </div>
+
+              <main id="main"></main>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+          <p>© 2021 lyorafelicya </p>
+      </div>
+
+      <script src="../javascript/script.js"></script>
+  </body>
+</html>
